@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     // The live URL for your Render backend
-    const API_BASE_URL = 'https://nisbot-wumpus.onrender.com';
+    const API_BASE_URL = 'https://fix-the-nisbot.onrender.com';
 
     const list = document.getElementById('leaderboard-list');
     const loading = document.getElementById('leaderboard-loading');
