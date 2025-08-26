@@ -1,5 +1,6 @@
 /* General Body and Font Styling */
 body {
+    position: relative; /* Set positioning context */
     font-family: 'Roboto Mono', monospace;
     /* The background image you requested */
     background-image: url('/assests/background.jpg');
@@ -211,13 +212,35 @@ main {
     height: 20px;
 }
 
-.page-logo {
+.logo-container {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 101;
+    padding: 10px;
+}
+
+.page-logo {
     width: 100px;
     height: 100px;
+     top: 0;
+    left: 0;
     border-radius: 50%;
     border: 3px solid #00ffdd;
-    z-index: 101;
+    margin-right: 20px;
+}
+
+.event-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+.angry-logo {
+   width: 188px;
+    height: 217px;
+    object-fit: cover;
+    border-radius: 49%;
 }
