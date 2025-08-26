@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nisbot Repair - Authentication</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="assests/logo.jpg" alt="Nisbot Logo" class="page-logo">
+
+    <!-- SPLASH SCREEN -->
+    <div id="auth-splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <img src="assests/angry-robot.avif" alt="Angry Robot" class="splash-robot">
+            <h1>Nisbot is Hostile!</h1>
+            <p>It has malfunctioned. You must collect the components to repair it.</p>
+            <button id="start-fix-button">Fix the Nisbot</button>
+        </div>
+    </div>
+
+    <div class="auth-page hidden" id="auth-container">
+        <div class="auth-content">
+            <h1>Participant Login</h1>
+            <p>Enter your registered name to begin the mission.</p>
+            <input type="text" id="participant-name" placeholder="Enter your name" autocomplete="off" autofocus>
+            <button id="login-button">Login</button>
+            <p id="auth-status"></p>
+        </div>
+    </div>
+    <script src="auth.js"></script>
+</body>
+</html>
