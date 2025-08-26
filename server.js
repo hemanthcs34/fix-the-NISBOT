@@ -1,6 +1,6 @@
 const express = require('express');
 const { MongoClient } = require('mongodb');
-const cors = require('cors'); // Import the cors package
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
@@ -26,7 +26,25 @@ async function connectDB() {
 }
 
 // --- Middleware ---
-app.use(cors()); // Use CORS to allow cross-origin requests
+
+// Whitelist of allowed origins for CORS
+const allowedOrigins = [
+    'http://localhost:8000',      // For local testing
+    'http://127.0.0.1:8000',     // Also for local testing
+    'https://fix-the-nisbot.vercel.app' // Your Vercel frontend URL
+];
+
+const corsOptions = {
+    origin: (origin, callback) => {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    }
+};
+
+app.use(cors(corsOptions)); // Use the configured CORS options
 app.use(express.static('public'));
 app.use(express.json());
 
@@ -51,12 +69,12 @@ app.post('/api/auth', async (req, res) => {
     }
 });
 
-// GET /api/leaderboard - Fetches top 10 scores from the 'participant' collection
+// GET /api/leaderboard - Fetches top 10 scores from the 'participants' collection
 app.get('/api/leaderboard', async (req, res) => {
     try {
         const leaderboard = await db.collection('participants')
             .find()
-            .sort({ totalScore: -1 })
+            .sort({ totalscore: -1 })
             .limit(10)
             .toArray();
         res.json(leaderboard);
@@ -66,19 +84,21 @@ app.get('/api/leaderboard', async (req, res) => {
     }
 });
 
-// POST /api/leaderboard - Updates an existing participant's score
+// POST /api/leaderboard - Adds the game score to the existing total score
 app.post('/api/leaderboard', async (req, res) => {
     try {
         const { name, score } = req.body;
         if (!name || typeof score !== 'number') {
             return res.status(400).json({ message: 'Invalid name or score provided.' });
         }
+        // Use $inc to increment the totalscore by the score from this game
         const result = await db.collection('participants').findOneAndUpdate(
             { name: name },
-            { $set: { totalScore: score } }
+            { $inc: { totalscore: score } },
+            { returnDocument: 'after' }
         );
         if (result) {
-            res.status(200).json({ message: 'Score updated successfully!' });
+            res.status(200).json({ message: 'Score updated successfully!', newTotalScore: result.totalscore });
         } else {
             res.status(404).json({ message: 'Could not find participant to update score.' });
         }
