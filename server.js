@@ -94,7 +94,7 @@ app.post('/api/leaderboard', async (req, res) => {
         // Use $inc to increment the totalscore by the score from this game
         const result = await db.collection('participants').findOneAndUpdate(
             { name: name },
-            { $inc: { totalscore: score } },
+            { $inc: { totalScore: score } },
             { returnDocument: 'after' }
         );
         if (result) {
