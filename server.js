@@ -1,6 +1,6 @@
 const express = require('express');
 const { MongoClient } = require('mongodb');
-const cors = require('cors'); // Import the cors package
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
@@ -26,7 +26,28 @@ async function connectDB() {
 }
 
 // --- Middleware ---
-app.use(cors()); // Use CORS to allow cross-origin requests
+
+// Whitelist of allowed origins for CORS
+const allowedOrigins = [
+    'http://localhost:8000',      // For local testing
+    'http://127.0.0.1:8000',     // Also for local testing
+    'https://fix-the-nisbot.vercel.app' // Your Vercel frontend URL
+];
+
+const corsOptions = {
+    origin: (origin, callback) => {
+        // Allow requests with no origin (like mobile apps or curl requests)
+        if (!origin) return callback(null, true);
+
+        if (allowedOrigins.indexOf(origin) === -1) {
+            const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+            return callback(new Error(msg), false);
+        }
+        return callback(null, true);
+    }
+};
+
+app.use(cors(corsOptions)); // Use the configured CORS options
 app.use(express.static('public'));
 app.use(express.json());
 

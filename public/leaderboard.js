@@ -1,1 +1,24 @@
-function _0x3061(){const _0x13db91=['675088kuLlVc','3434304VvaGSf','HTTP\x20error!\x20Status:\x20','https://nisbot-wumpus.onrender.com','leaderboard-list','name','4xTgYNv','none','length','DOMContentLoaded','/api/leaderboard','35nCUMeJ','9187670nsasaP','Error\x20loading\x20leaderboard:','appendChild','createElement','88832ZgVWde','textContent','status','3599655KMUcSP','425527rGEATI','Could\x20not\x20load\x20leaderboard.\x20Check\x20the\x20server\x20connection.','getElementById','11xGpiEE','style','addEventListener','totalscore','display','138bAiFrl','291771MJdhXg','leaderboard-loading','\x20-\x20'];_0x3061=function(){return _0x13db91;};return _0x3061();}function _0x4a0b(_0x438937,_0x3f12bf){const _0x306140=_0x3061();return _0x4a0b=function(_0x4a0b2f,_0x166393){_0x4a0b2f=_0x4a0b2f-0x194;let _0x1e4069=_0x306140[_0x4a0b2f];return _0x1e4069;},_0x4a0b(_0x438937,_0x3f12bf);}const _0x527692=_0x4a0b;(function(_0x162023,_0x14fb80){const _0x399897=_0x4a0b,_0x476759=_0x162023();while(!![]){try{const _0x149933=parseInt(_0x399897(0x1a9))/0x1*(-parseInt(_0x399897(0x19b))/0x2)+parseInt(_0x399897(0x1b1))/0x3*(parseInt(_0x399897(0x1a5))/0x4)+-parseInt(_0x399897(0x1a8))/0x5+parseInt(_0x399897(0x196))/0x6+-parseInt(_0x399897(0x1a0))/0x7*(parseInt(_0x399897(0x195))/0x8)+parseInt(_0x399897(0x1b2))/0x9+parseInt(_0x399897(0x1a1))/0xa*(parseInt(_0x399897(0x1ac))/0xb);if(_0x149933===_0x14fb80)break;else _0x476759['push'](_0x476759['shift']());}catch(_0x3bff87){_0x476759['push'](_0x476759['shift']());}}}(_0x3061,0x86d1f),document[_0x527692(0x1ae)](_0x527692(0x19e),async()=>{const _0x3306c9=_0x527692,_0x31d1dc=_0x3306c9(0x198),_0x2ad8be=document[_0x3306c9(0x1ab)](_0x3306c9(0x199)),_0x49622e=document['getElementById'](_0x3306c9(0x1b3));try{const _0x331133=await fetch(_0x31d1dc+_0x3306c9(0x19f));if(!_0x331133['ok'])throw new Error(_0x3306c9(0x197)+_0x331133[_0x3306c9(0x1a7)]);const _0x50e523=await _0x331133['json']();_0x50e523[_0x3306c9(0x19d)]===0x0?_0x49622e[_0x3306c9(0x1a6)]='No\x20scores\x20yet.\x20Be\x20the\x20first!':(_0x49622e[_0x3306c9(0x1ad)][_0x3306c9(0x1b0)]=_0x3306c9(0x19c),_0x50e523['forEach'](_0x2f9685=>{const _0x1cc456=_0x3306c9,_0x137f8b=document[_0x1cc456(0x1a4)]('li');_0x137f8b['textContent']=_0x2f9685[_0x1cc456(0x19a)]+_0x1cc456(0x194)+_0x2f9685[_0x1cc456(0x1af)],_0x2ad8be[_0x1cc456(0x1a3)](_0x137f8b);}));}catch(_0x4b35da){console['error'](_0x3306c9(0x1a2),_0x4b35da),_0x49622e[_0x3306c9(0x1a6)]=_0x3306c9(0x1aa);}}));
+document.addEventListener("DOMContentLoaded", async () => {
+  const _0x2ad8be = document.getElementById("leaderboard-list");
+  const _0x49622e = document.getElementById("leaderboard-loading");
+  try {
+    const _0x331133 = await fetch("https://nisbot-wumpus.onrender.com/api/leaderboard");
+    if (!_0x331133.ok) {
+      throw new Error("HTTP error! Status: " + _0x331133.status);
+    }
+    const _0x50e523 = await _0x331133.json();
+    if (_0x50e523.length === 0x0) {
+      _0x49622e.textContent = "No scores yet. Be the first!";
+    } else {
+      _0x49622e.style.display = "none";
+      _0x50e523.forEach(_0x2f9685 => {
+        const _0x137f8b = document.createElement('li');
+        _0x137f8b.textContent = _0x2f9685.name + " - " + _0x2f9685.totalscore;
+        _0x2ad8be.appendChild(_0x137f8b);
+      });
+    }
+  } catch (_0x4b35da) {
+    console.error("Error loading leaderboard:", _0x4b35da);
+    _0x49622e.textContent = "Could not load leaderboard. Check the server connection.";
+  }
+});
