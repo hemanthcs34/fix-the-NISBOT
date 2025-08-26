@@ -1,24 +1,32 @@
-document.addEventListener("DOMContentLoaded", async () => {
-  const _0x2ad8be = document.getElementById("leaderboard-list");
-  const _0x49622e = document.getElementById("leaderboard-loading");
-  try {
-    const _0x331133 = await fetch("https://nisbot-wumpus.onrender.com/api/leaderboard");
-    if (!_0x331133.ok) {
-      throw new Error("HTTP error! Status: " + _0x331133.status);
+document.addEventListener('DOMContentLoaded', async () => {
+    // The live URL for your Render backend
+    const API_BASE_URL = 'https://nisbot-wumpus.onrender.com';
+
+    const list = document.getElementById('leaderboard-list');
+    const loading = document.getElementById('leaderboard-loading');
+    
+    try {
+        // Fetch scores from our backend API
+        const response = await fetch(`${API_BASE_URL}/api/leaderboard`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        
+        const scores = await response.json();
+        
+        if (scores.length === 0) {
+            loading.textContent = 'No scores yet. Be the first!';
+        } else {
+            loading.style.display = 'none'; // Hide "Loading..." text
+            scores.forEach(player => {
+                const li = document.createElement('li');
+                // Use the correct field names: name and totalscore
+                li.textContent = `${player.name} - ${player.totalScore}`;
+                list.appendChild(li);
+            });
+        }
+    } catch (error) {
+        console.error('Error loading leaderboard:', error);
+        loading.textContent = 'Could not load leaderboard. Check the server connection.';
     }
-    const _0x50e523 = await _0x331133.json();
-    if (_0x50e523.length === 0x0) {
-      _0x49622e.textContent = "No scores yet. Be the first!";
-    } else {
-      _0x49622e.style.display = "none";
-      _0x50e523.forEach(_0x2f9685 => {
-        const _0x137f8b = document.createElement('li');
-        _0x137f8b.textContent = _0x2f9685.name + " - " + _0x2f9685.totalscore;
-        _0x2ad8be.appendChild(_0x137f8b);
-      });
-    }
-  } catch (_0x4b35da) {
-    console.error("Error loading leaderboard:", _0x4b35da);
-    _0x49622e.textContent = "Could not load leaderboard. Check the server connection.";
-  }
 });

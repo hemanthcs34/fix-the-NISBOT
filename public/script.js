@@ -1,1 +1,429 @@
-const _0x17ba03=_0x4e3d;function _0x4e3d(_0x4a39ec,_0x5b6b6b){const _0x366608=_0x3666();return _0x4e3d=function(_0x4e3dc3,_0x5ef01d){_0x4e3dc3=_0x4e3dc3-0x124;let _0x207c8d=_0x366608[_0x4e3dc3];return _0x207c8d;},_0x4e3d(_0x4a39ec,_0x5b6b6b);}function _0x3666(){const _0x366412=['createElement','submit-status','auth.html','playerPos','\x20/\x20','game-board','Welcome!\x20Find\x20all\x208\x20chips\x20to\x20repair\x20Nisbot.','error','div','Placement\x20failed','nisbotUser','ArrowLeft','6934hRuVTJ','Submission\x20failed','🌬️','push','collected','Lives:\x20','4ljwJYL','DOMContentLoaded','</p><p>Final\x20Score:\x20','You\x20ran\x20out\x20of\x20lives!\x20Mission\x20Lost.','floor','leaderboard.html','1,0','🧑‍🔧','Chip\x20collected!\x20You\x20now\x20have\x20','message-display','lives','POST','1997842YDtqnM','0,1','key','location','You\x20fell\x20into\x20a\x20pit!','280VGhdGJ','chips-display','appendChild','ArrowUp','game-over-screen','classList','win-screen','cues','Grid\x20too\x20small\x20for\x20all\x20items!\x20Please\x20reduce\x20pits/chips\x20or\x20increase\x20grid\x20size.','sensory-cue','\x20You\x20lost\x20a\x20life!\x20','chips','You\x20need\x20all\x208\x20chips\x20to\x20repair\x20Nisbot!','You\x20see\x20something\x20gleaming\x20here!','158019guBiZO','repeat','true','win-message','hasNisbot','player-location','1179162rfjldS','Error\x20submitting\x20score:','5DXDJWc','https://fix-the-nisbot.onrender.com','previousPlayerPos','You\x27ve\x20found\x20Nisbot\x20and\x20have\x20all\x20the\x20parts!\x20Press\x20\x27E\x27\x20to\x20repair\x20it.','hasChip','/api/leaderboard','sensory-display','pits','red','getElementById','hasPlayedNisbotWumpus_','stringify','abs','.game-container','textContent','9349648rvAdom','application/json','chipsCollected','<h2>Mission\x20Failed!</h2><p>','You\x20are\x20surrounded\x20by\x20pits\x20and\x20cannot\x20move!\x20Game\x20Over.','game-over-message','add','Score\x20updated\x20successfully!','grid','<h2>Repair\x20Complete!</h2><p>','green','3274191zRNCuP','All\x20chips\x20collected!\x20Find\x20Nisbot\x20to\x20repair.','addEventListener','remove','lives-display','visited','color','\x20lives\x20remaining.','You\x20hear\x20a\x20faint\x20electronic\x20whirring.','You\x20can\x27t\x20move\x20off\x20the\x20edge!','from','style','setItem','ArrowRight','</p>','You\x20feel\x20a\x20cool\x20draft.','getItem','Could\x20not\x20update\x20score.','ArrowDown','draft','parse','whirring','random','removeItem','gameOver','map','removeEventListener','932169qlinvn','log','href','hasPit','keydown','innerHTML','score','CRITICAL:\x20No\x20user\x20logged\x20in,\x20cannot\x20submit\x20score.','has','No\x20saved\x20game.\x20Starting\x20new\x20game.','Welcome\x20back!\x20Your\x20game\x20was\x20restored.','Saved\x20game\x20state\x20found.\x20Restoring\x20game.','Failed\x20to\x20place\x20all\x20items.\x20Try\x20again!','10PDOZUZ','Score:\x20','hidden','start-screen','nisbotGameState','You\x20moved.'];_0x3666=function(){return _0x366412;};return _0x3666();}(function(_0x157a77,_0x3b52ce){const _0x46fe9d=_0x4e3d,_0x18a618=_0x157a77();while(!![]){try{const _0x44e9d5=-parseInt(_0x46fe9d(0x175))/0x1*(parseInt(_0x46fe9d(0x18c))/0x2)+parseInt(_0x46fe9d(0x19a))/0x3*(parseInt(_0x46fe9d(0x17b))/0x4)+-parseInt(_0x46fe9d(0x1a2))/0x5*(parseInt(_0x46fe9d(0x1a0))/0x6)+parseInt(_0x46fe9d(0x156))/0x7+parseInt(_0x46fe9d(0x130))/0x8+parseInt(_0x46fe9d(0x13b))/0x9*(parseInt(_0x46fe9d(0x163))/0xa)+parseInt(_0x46fe9d(0x187))/0xb;if(_0x44e9d5===_0x3b52ce)break;else _0x18a618['push'](_0x18a618['shift']());}catch(_0x5ca5b7){_0x18a618['push'](_0x18a618['shift']());}}}(_0x3666,0xb2e08),document[_0x17ba03(0x13d)](_0x17ba03(0x17c),async()=>{const _0x4507c5=_0x17ba03,_0x29499f=sessionStorage[_0x4507c5(0x14b)](_0x4507c5(0x173));if(!_0x29499f){window[_0x4507c5(0x18a)][_0x4507c5(0x158)]=_0x4507c5(0x16b);return;}const _0x130814=_0x4507c5(0x1a3),_0x25e47e=0xa,_0x4e89c8=0x8,_0x413aae=0xa,_0x16477c=document[_0x4507c5(0x12a)](_0x4507c5(0x16e)),_0x40d321=document[_0x4507c5(0x12a)]('score-display'),_0x333fe9=document[_0x4507c5(0x12a)](_0x4507c5(0x18d)),_0x438857=document[_0x4507c5(0x12a)](_0x4507c5(0x13f)),_0x4588c3=document[_0x4507c5(0x12a)](_0x4507c5(0x184)),_0x3f0f41=document[_0x4507c5(0x12a)](_0x4507c5(0x127)),_0x8dcb29=document['getElementById'](_0x4507c5(0x192)),_0x19f8bc=document[_0x4507c5(0x12a)](_0x4507c5(0x190)),_0x3c80c1=document[_0x4507c5(0x12a)]('life-lost-screen'),_0x56fbb7=document[_0x4507c5(0x12a)]('life-lost-message'),_0x27423a=document['querySelector'](_0x4507c5(0x12e)),_0x279d67=document[_0x4507c5(0x12a)](_0x4507c5(0x19d)),_0x2a3a4c=document[_0x4507c5(0x12a)](_0x4507c5(0x135));let _0x3c2cab=[],_0x564319={'x':0x0,'y':0x0},_0x5967a8={'x':0x0,'y':0x0},_0x444da2={},_0xadfa4a=[],_0x5ee371=[],_0x3c858b=0x64,_0x11bcf4=0x5,_0x38f0c1=0x0,_0x134765=![],_0x5d1620=![];function _0x5ab5a6(){const _0x20e721=_0x4507c5;_0x3c2cab=[],_0x564319={'x':0x0,'y':0x0},_0x5967a8={'x':0x0,'y':0x0},_0x444da2={},_0xadfa4a=[],_0x5ee371=[],_0x3c858b=0x64,_0x11bcf4=0x5,_0x38f0c1=0x0,_0x134765=![],_0x5d1620=![];const _0x4145ec=0x1+0x1+_0x413aae+_0x4e89c8;if(_0x4145ec>_0x25e47e*_0x25e47e){alert(_0x20e721(0x194));return;}for(let _0x1f8c04=0x0;_0x1f8c04<_0x25e47e;_0x1f8c04++){_0x3c2cab[_0x1f8c04]=[];for(let _0x5e8431=0x0;_0x5e8431<_0x25e47e;_0x5e8431++){_0x3c2cab[_0x1f8c04][_0x5e8431]={'visited':![],'hasPit':![],'hasNisbot':![],'hasChip':![],'cues':new Set()};}}_0x3c2cab[_0x564319['y']][_0x564319['x']][_0x20e721(0x140)]=!![];const _0x5dad79=new Set(['0,0']),_0x3b83aa=new Set([_0x20e721(0x188),_0x20e721(0x181)]);function _0x3e1238(_0x1be4b6){const _0x23c1a8=_0x20e721;let _0x9c77f2,_0x56972f,_0x4a8a24,_0x110557=0x0;do{_0x9c77f2=Math[_0x23c1a8(0x17f)](Math[_0x23c1a8(0x151)]()*_0x25e47e),_0x56972f=Math[_0x23c1a8(0x17f)](Math['random']()*_0x25e47e),_0x4a8a24=_0x9c77f2+','+_0x56972f,_0x110557++;if(_0x110557>0x3e8){alert(_0x23c1a8(0x162));throw new Error(_0x23c1a8(0x172));}}while(_0x5dad79[_0x23c1a8(0x15e)](_0x4a8a24)||_0x1be4b6&&_0x3b83aa[_0x23c1a8(0x15e)](_0x4a8a24));return _0x5dad79[_0x23c1a8(0x136)](_0x4a8a24),{'x':_0x9c77f2,'y':_0x56972f};}_0x444da2=_0x3e1238(!![]),_0x3c2cab[_0x444da2['y']][_0x444da2['x']][_0x20e721(0x19e)]=!![];for(let _0x26d1c7=0x0;_0x26d1c7<_0x413aae;_0x26d1c7++){const _0x487b94=_0x3e1238(!![]);_0xadfa4a['push'](_0x487b94),_0x3c2cab[_0x487b94['y']][_0x487b94['x']][_0x20e721(0x159)]=!![];}for(let _0x38d501=0x0;_0x38d501<_0x4e89c8;_0x38d501++){const _0x81eaf0=_0x3e1238(![]);_0x5ee371[_0x20e721(0x178)]({..._0x81eaf0,'collected':![]}),_0x3c2cab[_0x81eaf0['y']][_0x81eaf0['x']][_0x20e721(0x125)]=!![];}for(let _0x5652e8=0x0;_0x5652e8<_0x25e47e;_0x5652e8++){for(let _0x4c2cca=0x0;_0x4c2cca<_0x25e47e;_0x4c2cca++){if(_0x284def({'x':_0x4c2cca,'y':_0x5652e8},_0x444da2))_0x3c2cab[_0x5652e8][_0x4c2cca][_0x20e721(0x193)]['add'](_0x20e721(0x150));_0xadfa4a['forEach'](_0x16ce19=>{const _0x5f538a=_0x20e721;if(_0x284def({'x':_0x4c2cca,'y':_0x5652e8},_0x16ce19))_0x3c2cab[_0x5652e8][_0x4c2cca]['cues'][_0x5f538a(0x136)](_0x5f538a(0x14e));});}}_0x43b1e3(),_0x1fc4fc(_0x20e721(0x16f),!![]),_0x331877();}function _0x284def(_0x313bdd,_0x3de987){const _0x5a8a9a=_0x4507c5;return Math[_0x5a8a9a(0x12d)](_0x313bdd['x']-_0x3de987['x'])+Math[_0x5a8a9a(0x12d)](_0x313bdd['y']-_0x3de987['y'])===0x1;}function _0x43b1e3(){const _0x46826b=_0x4507c5;_0x16477c['innerHTML']='';for(let _0x387ede=0x0;_0x387ede<_0x25e47e;_0x387ede++){for(let _0x3a9329=0x0;_0x3a9329<_0x25e47e;_0x3a9329++){const _0xab8d32=document[_0x46826b(0x169)](_0x46826b(0x171));_0xab8d32[_0x46826b(0x191)]['add']('cell');const _0x12c8d6=_0x3c2cab[_0x387ede][_0x3a9329];if(_0x12c8d6[_0x46826b(0x140)]){_0xab8d32[_0x46826b(0x191)][_0x46826b(0x136)]('visited');if(_0x12c8d6['hasPit'])_0xab8d32['innerHTML']='⚫';if(_0x12c8d6[_0x46826b(0x125)])_0xab8d32[_0x46826b(0x15b)]='⚙️';if(_0x12c8d6[_0x46826b(0x19e)])_0xab8d32[_0x46826b(0x15b)]='🤖';const _0xc4591=_0x564319['x']===_0x3a9329&&_0x564319['y']===_0x387ede;_0x12c8d6[_0x46826b(0x19e)]&&(_0x134765||_0xc4591)&&(_0xab8d32[_0x46826b(0x15b)]='🤖');const _0x3190ba=document['createElement'](_0x46826b(0x171));_0x3190ba[_0x46826b(0x191)]['add'](_0x46826b(0x195));if(_0x12c8d6[_0x46826b(0x193)][_0x46826b(0x15e)](_0x46826b(0x150)))_0x3190ba[_0x46826b(0x15b)]+='🔊';if(_0x12c8d6[_0x46826b(0x193)][_0x46826b(0x15e)](_0x46826b(0x14e)))_0x3190ba[_0x46826b(0x15b)]+=_0x46826b(0x177);_0xab8d32[_0x46826b(0x18e)](_0x3190ba);}_0x564319['x']===_0x3a9329&&_0x564319['y']===_0x387ede&&(_0xab8d32[_0x46826b(0x191)][_0x46826b(0x136)](_0x46826b(0x19f)),_0xab8d32['innerHTML']+=_0x46826b(0x182)),_0x16477c[_0x46826b(0x18e)](_0xab8d32);}}_0x40d321[_0x46826b(0x12f)]=_0x46826b(0x164)+_0x3c858b,_0x333fe9[_0x46826b(0x12f)]='Chips:\x20'+_0x38f0c1+_0x46826b(0x16d)+_0x4e89c8,_0x438857[_0x46826b(0x15b)]=_0x46826b(0x17a)+'❤️'[_0x46826b(0x19b)](_0x11bcf4);}function _0x1fc4fc(_0x502d32,_0x18d4cb=![]){const _0x3b56f2=_0x4507c5;_0x4588c3[_0x3b56f2(0x12f)]=_0x502d32;if(_0x18d4cb)_0x3f0f41[_0x3b56f2(0x12f)]='';else{const _0x43ec6a=_0x3c2cab[_0x564319['y']][_0x564319['x']]['cues'];let _0xd17ec=[];if(_0x43ec6a[_0x3b56f2(0x15e)](_0x3b56f2(0x150)))_0xd17ec[_0x3b56f2(0x178)](_0x3b56f2(0x143));if(_0x43ec6a['has'](_0x3b56f2(0x14e)))_0xd17ec[_0x3b56f2(0x178)](_0x3b56f2(0x14a));if(_0x3c2cab[_0x564319['y']][_0x564319['x']][_0x3b56f2(0x125)])_0xd17ec[_0x3b56f2(0x178)](_0x3b56f2(0x199));_0x3f0f41[_0x3b56f2(0x12f)]=_0xd17ec['join']('\x20');}}function _0x3bf864(_0x11489a,_0x37f1e4){const _0x93686b=_0x4507c5;if(_0x134765||_0x5d1620)return;_0x5967a8={..._0x564319};const _0x2572f2=_0x564319['x']+_0x11489a,_0x573f0a=_0x564319['y']+_0x37f1e4;_0x5d1620=!![],setTimeout(()=>{_0x5d1620=![];},0x96);if(_0x2572f2<0x0||_0x2572f2>=_0x25e47e||_0x573f0a<0x0||_0x573f0a>=_0x25e47e){_0x1fc4fc(_0x93686b(0x144),![]);return;}_0x564319['x']=_0x2572f2,_0x564319['y']=_0x573f0a,_0x3c858b-=0x1,_0x3c2cab[_0x573f0a][_0x2572f2][_0x93686b(0x140)]=!![],_0x52a6df(),_0x43b1e3(),_0x331877();if(!_0x134765){let _0x4ef404=!![];const _0x231253=[{'dx':0x0,'dy':-0x1},{'dx':0x0,'dy':0x1},{'dx':-0x1,'dy':0x0},{'dx':0x1,'dy':0x0}];for(const _0x116667 of _0x231253){const _0xde5e92=_0x564319['x']+_0x116667['dx'],_0xd0fd7a=_0x564319['y']+_0x116667['dy'];if(_0xde5e92>=0x0&&_0xde5e92<_0x25e47e&&_0xd0fd7a>=0x0&&_0xd0fd7a<_0x25e47e&&!_0x3c2cab[_0xd0fd7a][_0xde5e92][_0x93686b(0x159)]){_0x4ef404=![];break;}}_0x4ef404&&_0x1e0ae1(![],_0x93686b(0x134));}}function _0x30f0c7(_0x3ca69a){const _0x1c2d58=_0x4507c5;_0x11bcf4--,_0x43b1e3(),_0x11bcf4>0x0?(_0x564319={..._0x5967a8},_0x56fbb7['textContent']=_0x3ca69a+_0x1c2d58(0x196)+_0x11bcf4+_0x1c2d58(0x142),_0x3c80c1[_0x1c2d58(0x191)][_0x1c2d58(0x13e)](_0x1c2d58(0x165)),setTimeout(()=>{const _0x2c80a8=_0x1c2d58;_0x3c80c1[_0x2c80a8(0x191)][_0x2c80a8(0x136)](_0x2c80a8(0x165)),_0x1fc4fc(_0x11bcf4+'\x20lives\x20remaining.');},0x7d0)):_0x1e0ae1(![],_0x1c2d58(0x17e));}function _0x52a6df(){const _0x15fe0b=_0x4507c5,_0x592428=_0x3c2cab[_0x564319['y']][_0x564319['x']];_0x1fc4fc(_0x15fe0b(0x168),![]);if(_0x592428[_0x15fe0b(0x159)]){_0x30f0c7(_0x15fe0b(0x18b));return;}_0x592428[_0x15fe0b(0x19e)]&&(_0x38f0c1<_0x4e89c8?_0x30f0c7('You\x20approached\x20Nisbot\x20without\x20all\x20the\x20parts...\x20It\x20was\x20hostile!'):_0x1fc4fc(_0x15fe0b(0x124),!![]));}function _0x545b1a(){const _0x1d83aa=_0x4507c5;if(_0x134765)return;const _0x2ca85c=_0x3c2cab[_0x564319['y']][_0x564319['x']];if(_0x2ca85c[_0x1d83aa(0x19e)]){_0x38f0c1===_0x4e89c8?_0x1e0ae1(!![],'You\x20successfully\x20repaired\x20Nisbot!\x20You\x20win!'):(_0x3c858b-=0x32,_0x1fc4fc(_0x1d83aa(0x198)),_0x43b1e3(),_0x331877());return;}if(_0x2ca85c[_0x1d83aa(0x125)]){const _0x33338f=_0x5ee371['findIndex'](_0x1952db=>_0x1952db['x']===_0x564319['x']&&_0x1952db['y']===_0x564319['y']);_0x33338f>-0x1&&!_0x5ee371[_0x33338f][_0x1d83aa(0x179)]&&(_0x5ee371[_0x33338f][_0x1d83aa(0x179)]=!![],_0x2ca85c[_0x1d83aa(0x125)]=![],_0x38f0c1++,_0x3c858b+=0x32,_0x1fc4fc(_0x1d83aa(0x183)+_0x38f0c1+'.'),_0x38f0c1===_0x4e89c8&&_0x1fc4fc(_0x1d83aa(0x13c)),_0x43b1e3(),_0x331877());return;}_0x3c858b-=0x32,_0x1fc4fc('There\x20is\x20nothing\x20to\x20do\x20here.'),_0x43b1e3(),_0x331877();}function _0x1e0ae1(_0x4e11e1,_0x42a211){const _0x37dbcf=_0x4507c5;_0x134765=!![],document[_0x37dbcf(0x155)](_0x37dbcf(0x15a),_0x187a56);const _0x575ac8=sessionStorage['getItem']('nisbotUser');_0x575ac8&&localStorage[_0x37dbcf(0x147)](_0x37dbcf(0x12b)+_0x575ac8['toLowerCase'](),_0x37dbcf(0x19c));sessionStorage[_0x37dbcf(0x152)](_0x37dbcf(0x167));for(let _0x372807=0x0;_0x372807<_0x25e47e;_0x372807++){for(let _0x57f4c9=0x0;_0x57f4c9<_0x25e47e;_0x57f4c9++){_0x3c2cab[_0x372807][_0x57f4c9][_0x37dbcf(0x140)]=!![];}}_0x43b1e3(),_0x4e11e1?(_0x3c858b+=_0x11bcf4*0x32,_0x47254b(_0x3c858b),_0x279d67[_0x37dbcf(0x15b)]=_0x37dbcf(0x139)+_0x42a211+_0x37dbcf(0x17d)+_0x3c858b+_0x37dbcf(0x149),_0x8dcb29[_0x37dbcf(0x191)][_0x37dbcf(0x13e)](_0x37dbcf(0x165))):(_0x2a3a4c['innerHTML']=_0x37dbcf(0x133)+_0x42a211+_0x37dbcf(0x17d)+_0x3c858b+'</p>',_0x19f8bc['classList'][_0x37dbcf(0x13e)](_0x37dbcf(0x165)),setTimeout(()=>{const _0x53677f=_0x37dbcf;window[_0x53677f(0x18a)][_0x53677f(0x158)]=_0x53677f(0x180);},0x1388));}function _0x187a56(_0x7ca21){const _0x403492=_0x4507c5;if(_0x134765)return;switch(_0x7ca21[_0x403492(0x189)]){case _0x403492(0x18f):_0x3bf864(0x0,-0x1);break;case _0x403492(0x14d):_0x3bf864(0x0,0x1);break;case _0x403492(0x174):_0x3bf864(-0x1,0x0);break;case _0x403492(0x148):_0x3bf864(0x1,0x0);break;case'e':case'E':_0x545b1a();break;}}function _0x331877(){const _0x425026=_0x4507c5,_0x5a5cbb={'grid':_0x3c2cab['map'](_0x12f26d=>_0x12f26d[_0x425026(0x154)](_0xbd87a6=>({..._0xbd87a6,'cues':Array[_0x425026(0x145)](_0xbd87a6[_0x425026(0x193)])}))),'playerPos':_0x564319,'previousPlayerPos':_0x5967a8,'nisbotPos':_0x444da2,'pits':_0xadfa4a,'chips':_0x5ee371,'score':_0x3c858b,'lives':_0x11bcf4,'chipsCollected':_0x38f0c1,'gameOver':_0x134765};sessionStorage[_0x425026(0x147)](_0x425026(0x167),JSON[_0x425026(0x12c)](_0x5a5cbb));}function _0x3f4c27(){const _0x92fcbc=_0x4507c5,_0x5bb72d=sessionStorage['getItem']('nisbotGameState');if(!_0x5bb72d)return![];const _0x2a28a3=JSON[_0x92fcbc(0x14f)](_0x5bb72d);return _0x3c2cab=_0x2a28a3[_0x92fcbc(0x138)][_0x92fcbc(0x154)](_0x5b7b28=>_0x5b7b28[_0x92fcbc(0x154)](_0xb9c256=>({..._0xb9c256,'cues':new Set(_0xb9c256[_0x92fcbc(0x193)])}))),_0x564319=_0x2a28a3[_0x92fcbc(0x16c)],_0x5967a8=_0x2a28a3[_0x92fcbc(0x1a4)],_0x444da2=_0x2a28a3['nisbotPos'],_0xadfa4a=_0x2a28a3[_0x92fcbc(0x128)],_0x5ee371=_0x2a28a3[_0x92fcbc(0x197)],_0x3c858b=_0x2a28a3[_0x92fcbc(0x15c)],_0x11bcf4=_0x2a28a3[_0x92fcbc(0x185)],_0x38f0c1=_0x2a28a3[_0x92fcbc(0x132)],_0x134765=_0x2a28a3[_0x92fcbc(0x153)],!![];}async function _0x47254b(_0x6d83dd){const _0x475abc=_0x4507c5,_0x1effc6=sessionStorage['getItem'](_0x475abc(0x173));if(!_0x1effc6){console[_0x475abc(0x170)](_0x475abc(0x15d));return;}const _0x43495f=document[_0x475abc(0x12a)](_0x475abc(0x16a));try{const _0x4c22ab=await fetch(_0x130814+_0x475abc(0x126),{'method':_0x475abc(0x186),'headers':{'Content-Type':_0x475abc(0x131)},'body':JSON[_0x475abc(0x12c)]({'name':_0x1effc6,'score':_0x6d83dd})});if(!_0x4c22ab['ok'])throw new Error(_0x475abc(0x176));const _0x1d8574=await _0x4c22ab['json']();_0x43495f['textContent']=_0x475abc(0x137),_0x43495f['style'][_0x475abc(0x141)]=_0x475abc(0x13a);}catch(_0x4ca588){console[_0x475abc(0x170)](_0x475abc(0x1a1),_0x4ca588),_0x43495f[_0x475abc(0x12f)]=_0x475abc(0x14c),_0x43495f[_0x475abc(0x146)][_0x475abc(0x141)]=_0x475abc(0x129);}}const _0x452302=document[_0x4507c5(0x12a)](_0x4507c5(0x166));if(_0x452302)_0x452302['classList']['add']('hidden');_0x8dcb29[_0x4507c5(0x191)]['add'](_0x4507c5(0x165)),_0x19f8bc[_0x4507c5(0x191)][_0x4507c5(0x136)](_0x4507c5(0x165)),_0x3c80c1[_0x4507c5(0x191)]['add'](_0x4507c5(0x165)),_0x27423a['classList'][_0x4507c5(0x13e)](_0x4507c5(0x165)),document['addEventListener'](_0x4507c5(0x15a),_0x187a56),_0x3f4c27()&&!_0x134765?(console[_0x4507c5(0x157)](_0x4507c5(0x161)),_0x43b1e3(),_0x1fc4fc(_0x4507c5(0x160),!![])):(console['log'](_0x4507c5(0x15f)),_0x5ab5a6());}));
+document.addEventListener('DOMContentLoaded', async () => {
+    // --- Authentication Check ---
+    const loggedInUser = sessionStorage.getItem('nisbotUser');
+    if (!loggedInUser) {
+        window.location.href = 'auth.html';
+        return;
+    }
+
+    const API_BASE_URL = 'https://fix-the-nisbot.onrender.com';
+
+    // --- Game Constants ---
+    const GRID_SIZE = 10;
+    const NUM_CHIPS = 8;
+    const NUM_PITS = 10;
+
+    // --- DOM Elements ---
+    const board = document.getElementById('game-board');
+    const scoreDisplay = document.getElementById('score-display');
+    const chipsDisplay = document.getElementById('chips-display');
+    const livesDisplay = document.getElementById('lives-display');
+    const messageDisplay = document.getElementById('message-display');
+    const sensoryDisplay = document.getElementById('sensory-display');
+    
+    const winScreen = document.getElementById('win-screen');
+    const gameOverScreen = document.getElementById('game-over-screen');
+    const lifeLostScreen = document.getElementById('life-lost-screen');
+    const lifeLostMessage = document.getElementById('life-lost-message');
+    const gameContainer = document.querySelector('.game-container');
+
+    const winMessage = document.getElementById('win-message');
+    const gameOverMessage = document.getElementById('game-over-message');
+
+    // --- Game State ---
+    let grid = [];
+    let playerPos = { x: 0, y: 0 };
+    let previousPlayerPos = { x: 0, y: 0 };
+    let nisbotPos = {};
+    let pits = [];
+    let chips = [];
+    let score = 100;
+    let lives = 5;
+    let chipsCollected = 0;
+    let gameOver = false;
+    let moveCooldown = false;
+
+    // --- Core Game Logic ---
+
+    function initializeGame() {
+        grid = [];
+        playerPos = { x: 0, y: 0 };
+        previousPlayerPos = { x: 0, y: 0 };
+        nisbotPos = {};
+        pits = [];
+        chips = [];
+        score = 100;
+        lives = 5;
+        chipsCollected = 0;
+        gameOver = false;
+        moveCooldown = false;
+
+        const totalItems = 1 + 1 + NUM_PITS + NUM_CHIPS;
+        if (totalItems > GRID_SIZE * GRID_SIZE) {
+            alert('Grid too small for all items! Please reduce pits/chips or increase grid size.');
+            return;
+        }
+
+        for (let y = 0; y < GRID_SIZE; y++) {
+            grid[y] = [];
+            for (let x = 0; x < GRID_SIZE; x++) {
+                grid[y][x] = {
+                    visited: false,
+                    hasPit: false,
+                    hasNisbot: false,
+                    hasChip: false,
+                    cues: new Set()
+                };
+            }
+        }
+
+        grid[playerPos.y][playerPos.x].visited = true;
+
+        const occupiedPositions = new Set(['0,0']);
+        const forbiddenHazardPositions = new Set(['0,1', '1,0']);
+
+        function getUniquePosition(isHazard) {
+            let x, y, posKey;
+            let attempts = 0;
+            do {
+                x = Math.floor(Math.random() * GRID_SIZE);
+                y = Math.floor(Math.random() * GRID_SIZE);
+                posKey = `${x},${y}`;
+                attempts++;
+                if (attempts > 1000) {
+                    alert('Failed to place all items. Try again!');
+                    throw new Error('Placement failed');
+                }
+            } while (occupiedPositions.has(posKey) || (isHazard && forbiddenHazardPositions.has(posKey)));
+            occupiedPositions.add(posKey);
+            return { x, y };
+        }
+
+        nisbotPos = getUniquePosition(true);
+        grid[nisbotPos.y][nisbotPos.x].hasNisbot = true;
+
+        for (let i = 0; i < NUM_PITS; i++) {
+            const pos = getUniquePosition(true);
+            pits.push(pos);
+            grid[pos.y][pos.x].hasPit = true;
+        }
+
+        for (let i = 0; i < NUM_CHIPS; i++) {
+            const pos = getUniquePosition(false);
+            chips.push({ ...pos, collected: false });
+            grid[pos.y][pos.x].hasChip = true;
+        }
+
+        for (let y = 0; y < GRID_SIZE; y++) {
+            for (let x = 0; x < GRID_SIZE; x++) {
+                if (isAdjacent({x, y}, nisbotPos)) grid[y][x].cues.add('whirring');
+                pits.forEach(pit => {
+                    if (isAdjacent({x, y}, pit)) grid[y][x].cues.add('draft');
+                });
+            }
+        }
+
+        render();
+        updateMessages("Welcome! Find all 8 chips to repair Nisbot.", true);
+        saveGameState();
+    }
+
+    function isAdjacent(pos1, pos2) {
+        return Math.abs(pos1.x - pos2.x) + Math.abs(pos1.y - pos2.y) === 1;
+    }
+
+    function render() {
+        board.innerHTML = '';
+        for (let y = 0; y < GRID_SIZE; y++) {
+            for (let x = 0; x < GRID_SIZE; x++) {
+                const cell = document.createElement('div');
+                cell.classList.add('cell');
+                const cellData = grid[y][x];
+
+                if (cellData.visited) {
+                    cell.classList.add('visited');
+                    if (cellData.hasPit) cell.innerHTML = '⚫';
+                    if (cellData.hasChip) cell.innerHTML = '⚙️';
+                    if (cellData.hasNisbot) cell.innerHTML = '🤖';
+
+                    const isPlayerOnThisTile = playerPos.x === x && playerPos.y === y;
+                    if (cellData.hasNisbot && (gameOver || isPlayerOnThisTile)) {
+                        cell.innerHTML = '🤖';
+                    }
+
+                    const cueContainer = document.createElement('div');
+                    cueContainer.classList.add('sensory-cue');
+                    if(cellData.cues.has('whirring')) cueContainer.innerHTML += '🔊';
+                    if(cellData.cues.has('draft')) cueContainer.innerHTML += '🌬️';
+                    cell.appendChild(cueContainer);
+                }
+
+                if (playerPos.x === x && playerPos.y === y) {
+                    cell.classList.add('player-location');
+                    cell.innerHTML += '🧑‍🔧';
+                }
+
+                board.appendChild(cell);
+            }
+        }
+        scoreDisplay.textContent = `Score: ${score}`;
+        chipsDisplay.textContent = `Chips: ${chipsCollected} / ${NUM_CHIPS}`;
+        livesDisplay.innerHTML = 'Lives: ' + '❤️'.repeat(lives);
+    }
+
+    function updateMessages(message, clearSensory = false) {
+        messageDisplay.textContent = message;
+        if (clearSensory) {
+            sensoryDisplay.textContent = '';
+        } else {
+            const cues = grid[playerPos.y][playerPos.x].cues;
+            let sensoryText = [];
+            if (cues.has('whirring')) sensoryText.push("You hear a faint electronic whirring.");
+            if (cues.has('draft')) sensoryText.push("You feel a cool draft.");
+            if (grid[playerPos.y][playerPos.x].hasChip) sensoryText.push("You see something gleaming here!");
+            sensoryDisplay.textContent = sensoryText.join(' ');
+        }
+    }
+
+    function movePlayer(dx, dy) {
+        if (gameOver || moveCooldown) return;
+
+        previousPlayerPos = { ...playerPos };
+
+        const newX = playerPos.x + dx;
+        const newY = playerPos.y + dy;
+
+        moveCooldown = true;
+        setTimeout(() => { moveCooldown = false; }, 150);
+
+        if (newX < 0 || newX >= GRID_SIZE || newY < 0 || newY >= GRID_SIZE) {
+            updateMessages("You can't move off the edge!", false);
+            return;
+        }
+
+        playerPos.x = newX;
+        playerPos.y = newY;
+        score -= 1;
+        grid[newY][newX].visited = true;
+        checkCurrentTile();
+        render();
+        saveGameState();
+
+        if (!gameOver) {
+            let stuck = true;
+            const directions = [{dx: 0, dy: -1}, {dx: 0, dy: 1}, {dx: -1, dy: 0}, {dx: 1, dy: 0}];
+            for (const dir of directions) {
+                const tx = playerPos.x + dir.dx;
+                const ty = playerPos.y + dir.dy;
+                if (tx >= 0 && tx < GRID_SIZE && ty >= 0 && ty < GRID_SIZE && !grid[ty][tx].hasPit) {
+                    stuck = false;
+                    break;
+                }
+            }
+            if (stuck) {
+                endGame(false, "You are surrounded by pits and cannot move! Game Over.");
+            }
+        }
+    }
+
+    function handleHazard(message) {
+        lives--;
+        render(); // Update hearts display immediately
+        if (lives > 0) {
+            playerPos = { ...previousPlayerPos };
+            lifeLostMessage.textContent = `${message} You lost a life! ${lives} lives remaining.`;
+            lifeLostScreen.classList.remove('hidden');
+            setTimeout(() => {
+                lifeLostScreen.classList.add('hidden');
+                updateMessages(`${lives} lives remaining.`);
+            }, 2000); // Show for 2 seconds
+        } else {
+            endGame(false, "You ran out of lives! Mission Lost.");
+        }
+    }
+
+    function checkCurrentTile() {
+        const currentTile = grid[playerPos.y][playerPos.x];
+        updateMessages("You moved.", false);
+
+        if (currentTile.hasPit) {
+            handleHazard("You fell into a pit!");
+            return;
+        }
+
+        if (currentTile.hasNisbot) {
+            if (chipsCollected < NUM_CHIPS) {
+                handleHazard("You approached Nisbot without all the parts... It was hostile!");
+            } else {
+                updateMessages("You've found Nisbot and have all the parts! Press 'E' to repair it.", true);
+            }
+        }
+    }
+
+    function performAction() {
+        if (gameOver) return;
+        const currentTile = grid[playerPos.y][playerPos.x];
+
+        if (currentTile.hasNisbot) {
+            if (chipsCollected === NUM_CHIPS) {
+                endGame(true, "You successfully repaired Nisbot! You win!");
+            } else {
+                score -= 50;
+                updateMessages("You need all 8 chips to repair Nisbot!");
+                render();
+                saveGameState();
+            }
+            return;
+        }
+
+        if (currentTile.hasChip) {
+            const chipIndex = chips.findIndex(c => c.x === playerPos.x && c.y === playerPos.y);
+            if (chipIndex > -1 && !chips[chipIndex].collected) {
+                chips[chipIndex].collected = true;
+                currentTile.hasChip = false;
+                chipsCollected++;
+                score += 50;
+                updateMessages(`Chip collected! You now have ${chipsCollected}.`);
+                if (chipsCollected === NUM_CHIPS) {
+                    updateMessages("All chips collected! Find Nisbot to repair.");
+                }
+                render();
+                saveGameState();
+            }
+            return;
+        }
+
+        score -= 50;
+        updateMessages("There is nothing to do here.");
+        render();
+        saveGameState();
+    }
+
+    function endGame(isWin, message) {
+        gameOver = true;
+        document.removeEventListener('keydown', handleKeyDown);
+
+        const loggedInUser = sessionStorage.getItem('nisbotUser');
+        if (loggedInUser) {
+            localStorage.setItem('hasPlayedNisbotWumpus_' + loggedInUser.toLowerCase(), 'true');
+        }
+
+        sessionStorage.removeItem('nisbotGameState');
+        for (let y = 0; y < GRID_SIZE; y++) {
+            for (let x = 0; x < GRID_SIZE; x++) {
+                grid[y][x].visited = true;
+            }
+        }
+        render();
+        
+        if (isWin) {
+            score += lives * 50; // Add bonus for remaining lives
+            submitScore(score);
+            winMessage.innerHTML = `<h2>Repair Complete!</h2><p>${message}</p><p>Final Score: ${score}</p>`;
+            winScreen.classList.remove('hidden');
+        } else {
+            gameOverMessage.innerHTML = `<h2>Mission Failed!</h2><p>${message}</p><p>Final Score: ${score}</p>`;
+            gameOverScreen.classList.remove('hidden');
+            setTimeout(() => {
+                window.location.href = 'leaderboard.html';
+            }, 5000); // Redirect after 5 seconds
+        }
+    }
+
+    function handleKeyDown(e) {
+        if (gameOver) return;
+        switch (e.key) {
+            case 'ArrowUp': movePlayer(0, -1); break;
+            case 'ArrowDown': movePlayer(0, 1); break;
+            case 'ArrowLeft': movePlayer(-1, 0); break;
+            case 'ArrowRight': movePlayer(1, 0); break;
+            case 'e': case 'E': performAction(); break;
+        }
+    }
+
+    // --- Session Storage & Score Submission ---
+
+    function saveGameState() {
+        const stateToSave = {
+            grid: grid.map(row => row.map(cell => ({ ...cell, cues: Array.from(cell.cues) }))),
+            playerPos,
+            previousPlayerPos,
+            nisbotPos,
+            pits,
+            chips,
+            score,
+            lives,
+            chipsCollected,
+            gameOver
+        };
+        sessionStorage.setItem('nisbotGameState', JSON.stringify(stateToSave));
+    }
+
+    function loadGameState() {
+        const savedStateJSON = sessionStorage.getItem('nisbotGameState');
+        if (!savedStateJSON) return false;
+
+        const savedState = JSON.parse(savedStateJSON);
+
+        grid = savedState.grid.map(row => row.map(cell => ({ ...cell, cues: new Set(cell.cues) })));
+        playerPos = savedState.playerPos;
+        previousPlayerPos = savedState.previousPlayerPos;
+        nisbotPos = savedState.nisbotPos;
+        pits = savedState.pits;
+        chips = savedState.chips;
+        score = savedState.score;
+        lives = savedState.lives;
+        chipsCollected = savedState.chipsCollected;
+        gameOver = savedState.gameOver;
+
+        return true;
+    }
+
+    async function submitScore(scoreValue) {
+        const name = sessionStorage.getItem('nisbotUser');
+        if (!name) {
+            console.error("CRITICAL: No user logged in, cannot submit score.");
+            return;
+        }
+
+        const statusP = document.getElementById('submit-status');
+
+        try {
+            const response = await fetch(`${API_BASE_URL}/api/leaderboard`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: name, score: scoreValue })
+            });
+
+            if (!response.ok) throw new Error('Submission failed');
+
+            const result = await response.json();
+            statusP.textContent = 'Score updated successfully!';
+            statusP.style.color = 'green';
+
+        } catch (error) {
+            console.error('Error submitting score:', error);
+            statusP.textContent = 'Could not update score.';
+            statusP.style.color = 'red';
+        }
+    }
+
+    // --- Game Initialization ---
+    const startScreen = document.getElementById('start-screen');
+    if(startScreen) startScreen.classList.add('hidden');
+    winScreen.classList.add('hidden');
+    gameOverScreen.classList.add('hidden');
+    lifeLostScreen.classList.add('hidden');
+    gameContainer.classList.remove('hidden');
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    if (loadGameState() && !gameOver) {
+        console.log("Saved game state found. Restoring game.");
+        render();
+        updateMessages("Welcome back! Your game was restored.", true);
+    } else {
+        console.log("No saved game. Starting new game.");
+        initializeGame();
+    }
+});

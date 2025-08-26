@@ -1,1 +1,73 @@
-function _0x31f9(){const _0x14ed1c=['Success!\x20Starting\x20game...','auth-container','click','removeItem','380650bIwukb','textContent','trim','nisbotGameState','start-fix-button','addEventListener','index.html','Authentication\x20failed.','application/json','This\x20name\x20has\x20already\x20been\x20used\x20to\x20play\x20the\x20game\x20on\x20this\x20device.','Please\x20enter\x20your\x20name.','78KEagCj','error','POST','message','json','focus','hasPlayedNisbotWumpus_','9mwfSYe','login-button','color','https://fix-the-nisbot.onrender.com','stringify','#e0e0e0','715470VezzAr','nisbotUser','54928WtaahE','href','green','hidden','value','auth-splash-screen','remove','red','183496yvkZHt','783663vzYISO','yellow','964612AxzlzS','2gFqAye','getElementById','auth-status','add','location','Enter','toLowerCase','style','79597tSYzWw','keypress','DOMContentLoaded'];_0x31f9=function(){return _0x14ed1c;};return _0x31f9();}const _0x24fc64=_0x42e5;function _0x42e5(_0x946ff6,_0x3f9da9){const _0x31f955=_0x31f9();return _0x42e5=function(_0x42e5bf,_0x97018){_0x42e5bf=_0x42e5bf-0x137;let _0x29a297=_0x31f955[_0x42e5bf];return _0x29a297;},_0x42e5(_0x946ff6,_0x3f9da9);}(function(_0x394221,_0x19202b){const _0x2035aa=_0x42e5,_0x513149=_0x394221();while(!![]){try{const _0x2475f1=-parseInt(_0x2035aa(0x15f))/0x1*(-parseInt(_0x2035aa(0x163))/0x2)+-parseInt(_0x2035aa(0x160))/0x3+parseInt(_0x2035aa(0x162))/0x4+-parseInt(_0x2035aa(0x155))/0x5+-parseInt(_0x2035aa(0x148))/0x6*(-parseInt(_0x2035aa(0x16b))/0x7)+-parseInt(_0x2035aa(0x157))/0x8*(-parseInt(_0x2035aa(0x14f))/0x9)+-parseInt(_0x2035aa(0x13d))/0xa;if(_0x2475f1===_0x19202b)break;else _0x513149['push'](_0x513149['shift']());}catch(_0x4403d5){_0x513149['push'](_0x513149['shift']());}}}(_0x31f9,0x216fe),document[_0x24fc64(0x142)](_0x24fc64(0x138),()=>{const _0x598dac=_0x24fc64,_0x3c39b7=_0x598dac(0x152),_0x1dd3f4=document[_0x598dac(0x164)](_0x598dac(0x150)),_0x40f85c=document[_0x598dac(0x164)]('participant-name'),_0x433f75=document[_0x598dac(0x164)](_0x598dac(0x165)),_0x70c835=document[_0x598dac(0x164)](_0x598dac(0x141)),_0xb1e508=document[_0x598dac(0x164)](_0x598dac(0x15c)),_0x49a2e6=document[_0x598dac(0x164)](_0x598dac(0x13a));sessionStorage[_0x598dac(0x13c)]('nisbotUser'),sessionStorage[_0x598dac(0x13c)](_0x598dac(0x140)),_0x70c835[_0x598dac(0x142)](_0x598dac(0x13b),()=>{const _0x11d5b4=_0x598dac;_0xb1e508['classList'][_0x11d5b4(0x166)](_0x11d5b4(0x15a)),_0x49a2e6['classList'][_0x11d5b4(0x15d)](_0x11d5b4(0x15a)),_0x40f85c[_0x11d5b4(0x14d)]();});const _0x38e63e=async()=>{const _0x46df68=_0x598dac,_0x2e5b5b=_0x40f85c[_0x46df68(0x15b)][_0x46df68(0x13f)]();if(!_0x2e5b5b){_0x433f75[_0x46df68(0x13e)]=_0x46df68(0x147),_0x433f75[_0x46df68(0x16a)][_0x46df68(0x151)]=_0x46df68(0x161);return;}const _0x19d69b=localStorage['getItem'](_0x46df68(0x14e)+_0x2e5b5b[_0x46df68(0x169)]());if(_0x19d69b){_0x433f75[_0x46df68(0x13e)]=_0x46df68(0x146),_0x433f75[_0x46df68(0x16a)][_0x46df68(0x151)]=_0x46df68(0x15e);return;}_0x433f75[_0x46df68(0x13e)]='Authenticating...',_0x433f75[_0x46df68(0x16a)]['color']=_0x46df68(0x154);try{const _0x18d514=await fetch(_0x3c39b7+'/api/auth',{'method':_0x46df68(0x14a),'headers':{'Content-Type':_0x46df68(0x145)},'body':JSON[_0x46df68(0x153)]({'name':_0x2e5b5b})}),_0x55aa37=await _0x18d514[_0x46df68(0x14c)]();_0x18d514['ok']?(_0x433f75[_0x46df68(0x13e)]=_0x46df68(0x139),_0x433f75[_0x46df68(0x16a)]['color']=_0x46df68(0x159),sessionStorage['setItem'](_0x46df68(0x156),_0x2e5b5b),window[_0x46df68(0x167)][_0x46df68(0x158)]=_0x46df68(0x143)):(_0x433f75[_0x46df68(0x13e)]=_0x55aa37[_0x46df68(0x14b)]||_0x46df68(0x144),_0x433f75['style'][_0x46df68(0x151)]=_0x46df68(0x15e));}catch(_0x33dc00){console[_0x46df68(0x149)]('Login\x20error:',_0x33dc00),_0x433f75[_0x46df68(0x13e)]='Could\x20not\x20connect\x20to\x20the\x20server.',_0x433f75[_0x46df68(0x16a)][_0x46df68(0x151)]=_0x46df68(0x15e);}};_0x1dd3f4[_0x598dac(0x142)](_0x598dac(0x13b),_0x38e63e),_0x40f85c[_0x598dac(0x142)](_0x598dac(0x137),_0x47212b=>{const _0xe6996d=_0x598dac;_0x47212b['key']===_0xe6996d(0x168)&&_0x38e63e();});}));
+document.addEventListener('DOMContentLoaded', () => {
+    const API_BASE_URL = 'https://fix-the-nisbot.onrender.com';
+
+    const loginButton = document.getElementById('login-button');
+    const nameInput = document.getElementById('participant-name');
+    const statusP = document.getElementById('auth-status');
+    const startFixButton = document.getElementById('start-fix-button');
+    const authSplashScreen = document.getElementById('auth-splash-screen');
+    const authContainer = document.getElementById('auth-container');
+
+    // Clear any previous session on login page load to ensure a fresh start.
+    sessionStorage.removeItem('nisbotUser');
+    sessionStorage.removeItem('nisbotGameState');
+
+    startFixButton.addEventListener('click', () => {
+        authSplashScreen.classList.add('hidden');
+        authContainer.classList.remove('hidden');
+        nameInput.focus();
+    });
+
+    const attemptLogin = async () => {
+        const name = nameInput.value.trim();
+        if (!name) {
+            statusP.textContent = 'Please enter your name.';
+            statusP.style.color = 'yellow';
+            return;
+        }
+
+        // Client-side check to see if the user has already played on this device.
+        // This is not a secure way to prevent replay, as it can be bypassed by clearing browser data.
+        // A server-side check would be more robust.
+        const hasPlayed = localStorage.getItem('hasPlayedNisbotWumpus_' + name.toLowerCase());
+        if (hasPlayed) {
+            statusP.textContent = 'This name has already been used to play the game on this device.';
+            statusP.style.color = 'red';
+            return;
+        }
+
+        statusP.textContent = 'Authenticating...';
+        statusP.style.color = '#e0e0e0';
+
+        try {
+            const response = await fetch(`${API_BASE_URL}/api/auth`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: name })
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                statusP.textContent = 'Success! Starting game...';
+                statusP.style.color = 'green';
+                sessionStorage.setItem('nisbotUser', name);
+                window.location.href = 'index.html';
+            } else {
+                statusP.textContent = result.message || 'Authentication failed.';
+                statusP.style.color = 'red';
+            }
+        } catch (error) {
+            console.error('Login error:', error);
+            statusP.textContent = 'Could not connect to the server.';
+            statusP.style.color = 'red';
+        }
+    };
+
+    loginButton.addEventListener('click', attemptLogin);
+    nameInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            attemptLogin();
+        }
+    });
+});
