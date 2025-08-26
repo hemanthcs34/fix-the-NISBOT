@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_BASE_URL = 'https://nisbot-wumpus.onrender.com';
+    const API_BASE_URL = 'https://fix-the-nisbot.onrender.com';
 
     const loginButton = document.getElementById('login-button');
     const nameInput = document.getElementById('participant-name');

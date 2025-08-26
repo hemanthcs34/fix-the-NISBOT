@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
-    const API_BASE_URL = 'https://nisbot-wumpus.onrender.com';
+    const API_BASE_URL = 'https://fix-the-nisbot.onrender.com';
 
     // --- Game Constants ---
     const GRID_SIZE = 10;
